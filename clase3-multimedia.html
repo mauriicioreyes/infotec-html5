@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Clase 3 - Multimedia</title>
+</head>
+<body>
+    <!-- Etiqueta AUDIO -->
+    <audio src="media/audio/Make It Happen.mp3" controls loop preload="none" autoplay>Error con archivo de audio</audio>
+    
+    <br/>
+
+    <audio controls>
+        Audio 2 - No funciona
+        <source src="media/audio/Route-66.ogg" type="audio/ogg"/>
+        <source src="media/audio/Route-66.aac" type="audio/aac"/>
+        <source src="media/audio/Route-66.wav" type="audio/wav"/>
+        <source src="media/audio/Route 66.mp3" type="audio/mp3"/>
+    </audio>
+
+    <!-- Etiqueta VIDEO -->
+    <video src="https://www.w3schools.com/html/mov_bbb.mp4" width="640" height="360" controls loop poster="media/video/portada_video.jpg" preload="auto">
+        Error con archivo de video
+    </video>
+
+    <br/>
+
+    <video controls width="640" height="360">
+        Video 2 - Error al cargar
+        <source src="media/video/LED Tunnel Visuals.mp4#t=15,30" type="video/mp4"/>
+        <source src="media/video/LED Tunnel Visuals.mp4#t=15,30" type="video/mp4"/>
+        <source src="media/video/LED Tunnel Visuals.webm#t=15,30" type="video/mp4"/>
+
+    </video>
+</body>
+</html>
