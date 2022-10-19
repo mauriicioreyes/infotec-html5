@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Clase 3 - Multimedia</title>
+    </head>
+    <body>
+        <!-- Audio
+        .mp3 .wav .ogg .acc -->
+        <audio src="./media/Castle.ogg" loop controls>Error al cargar</audio>
+
+        <br/>
+
+        <audio controls preload="none">No sirvo :/
+            <source src="./media/Make It Happen.mp3" type="audio/mp3"/>
+        </audio>
+
+        <!-- Video -->
+        <video width="640" height="360" src="video/Esfera Colores.mp4" controls preload="metadata">No sirvo VIDEO</video>
+
+        <video width="640" height="360" controls loop muted poster="video/portada_video.jpg" preload="none">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"/>
+            <source src="video/LED Tunnel Visuals.mp4" type="mp4"/>
+        </video>
+    </body>
+</html>
