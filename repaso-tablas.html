@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Clase 3 - Repaso Tablas</title>
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <h3>Tabla simple</h3>
+        <table border="1">
+            <tr>
+                <td>Alfonso</td>
+                <td>Alejandro</td>
+                <td>María</td>
+            </tr>
+        </table>
+        <br/>
+
+        <h3>Tabla simple con encabezado</h3>
+        <table border="1">
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+            </tr>
+            <tr>
+                <td>Alfonso</td>
+                <td>Alejandro</td>
+                <td>María</td>
+            </tr>
+            <tr>
+                <td>Moreno</td>
+                <td>Gutierrez</td>
+                <td>Hernández</td>
+            </tr>
+        </table>
+
+        <br/>
+
+        <h3>Tabla con thead, tfoot y tbody</h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Contenido Header 1</th>
+                    <th>Contenido Header 2</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td>Contenido Footer 1</td>
+                    <td>Contenido Footer 2</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>Contenido Body 1</td>
+                    <td>Contenido Body 2</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br/>
+
+        <h3>Tabla con colgroup</h3>
+        <table border="1">
+            <colgroup span="4" class="columns"></colgroup>
+            <tr>
+                <th>Estado</th>
+                <th>Capital</th>
+                <th>Población</th>
+            </tr>
+            <tr>
+                <td>Jalisco</td>
+                <td>Guadalajara</td>
+                <td>30 Millones</td>
+            </tr>
+            <tr>
+                <td>Tepic</td>
+                <td>Nayarit</td>
+                <td>5 Millones</td>
+            </tr>
+        </table>
+
+        <br/>
+
+        <h3>Tabla con colgroup y col</h3>
+        <table border="1">
+            <colgroup>
+                <col class="columna1"/>
+                <col class="columna2mas3" span="2"/>
+            </colgroup>
+            <tr>
+                <th>Lima</th>
+                <th>Limón</th>
+                <th>Naranja</th>
+            </tr>
+            <tr>
+                <td>Verde</td>
+                <td>Amarillo</td>
+                <td>Naranja</td>
+            </tr>
+        </table>
+
+        <br/>
+
+        <h3>Tabla simple con título</h3>
+        <table border="1">
+            <caption>Historial de llamadas</caption>
+            <tr>
+                <td>Daniel</td>
+                <td>474 474 1234</td>
+                <td>5 Minutos</td>
+            </tr>
+        </table>
+        
+    </body>
+</html>
