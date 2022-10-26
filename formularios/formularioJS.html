@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario JavaScript</title>
+    <meta charset="UTF-8"/>
+</head>
+<body>
+    <h3>Formulario utilizando JavaScript</h3>
+
+    <form>
+        <p>Ingrese su nombre: 
+            <input type="text" id="nombre"/>
+        </p>
+        <p>Ingrese su edad: 
+            <input type="text" id="edad"/>
+        </p>
+        <p>Ingrese una clave: 
+            <input type="password" id="clave"/>
+        </p>
+        <br/>
+        <p>
+            <select id="select1" onChange="cambiarColor()">
+                <option value="FF0000">Rojo</option>
+                <option value="00FF00">Verde</option>
+                <option value="0000FF">Azúl</option>
+            </select>
+        </p>
+        <p>Número de índice seleccionado del objeto SELECT: 
+            <input type="text" id="texto1"/>
+        </p>
+        <p>Texto seleccionado: 
+            <input type="text" id="texto2"/>
+        </p>
+        <p>Valor asociado: 
+            <input type="text" id="texto3"/>
+        </p>
+        <p>
+            <input type="button" value="Confirmar" onClick="mostrar()"/>
+            <input type="reset" value="Limpiar"/> 
+        </p>
+
+        <script>
+            function mostrar() {
+                let nom = document.getElementById('nombre').value;
+                let ed = document.getElementById('edad').value;
+                let clave = document.getElementById('clave').value;
+
+                if (clave.length < 5) {
+                    alert('La clave es muy corta, 5 caracteres minimo!');
+
+                } else {
+                    alert('Tamaño correcto de clave');
+                    alert('Nombre: ' + nom);
+                    alert('Edad: ' + ed);
+                }
+            }
+
+            function cambiarColor() {
+                let seleccion = document.getElementById('select1');
+
+                document.getElementById('texto1').value = seleccion.selectedIndex;
+                document.getElementById('texto2').value = seleccion.options[seleccion.selectedIndex].text;
+                document.getElementById('texto3').value = seleccion.options[seleccion.selectedIndex].value;
+            }
+        </script>
+    </form>
+</body>
+</html>
