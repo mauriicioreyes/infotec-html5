@@ -44,10 +44,11 @@
                 let nom = document.getElementById('nombre').value;
                 let ed = document.getElementById('edad').value;
                 let clave = document.getElementById('clave').value;
+                const $clave = document.querySelector('#clave');
 
                 if (clave.length < 5) {
                     alert('La clave es muy corta, 5 caracteres minimo!');
-
+                    $clave.focus();
                 } else {
                     alert('Tamaño correcto de clave');
                     alert('Nombre: ' + nom);
