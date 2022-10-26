@@ -5,11 +5,39 @@
         <meta charset="UTF-8"/>
     </head>
     <body>
+        <h3>Formularios en HTML</h3>
         <form action="registrarDatos.php" method="post">
-            Ingrese su nombre:
-            <input type="text" name="nombre" size="20"/>
+            <label for="nombre">Ingrese su nombre:</label>
+            <input type="text" name="nombre" id="nombre" size="20"/><br/>
+            <label for="correo">Ingrese su correo:</label>
+            <input type="email" name="correo" id="correo"/><br/>
+            <label for="clave">Ingrese su clave:</label>
+            <input type="password" name="clave" id="clave"/><br/><br/>
+            <label for="comentarios">Comentarios:</label><br/>
+            <textarea name="comentarios" id="comentarios" rows="5" cols="40"></textarea><br/><br/>
+
+            Seleccione los lenguajes que conoce:
             <br/>
-            <input type="submit" name="enviar" value="Dale!"/>
+            <label for="java">
+                <input type="checkbox" name="java" id="java"/>Java<br/>
+            </label>
+            <label for="cmasmas">
+                <input type="checkbox" name="cmasmas" id="cmasmas"/>C++<br/>
+            </label>
+            <label for="php">
+                <input type="checkbox" name="php" id="php"/>PHP<br/>
+            </label>
+            <label for="csharp">
+                <input type="checkbox" name="csharp" id="csharp"/>C#<br/>
+            </label>
+            <label for="python">
+                <input type="checkbox" name="python" id="python"/>Python<br/>
+            </label>
+
+
+            <br/>
+            <input type="submit" name="enviar" value="Enviar ✔"/>
+            <input type="reset" value="Borrar ❌" />
         </form>
     </body>
 </html>
