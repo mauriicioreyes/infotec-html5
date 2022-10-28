@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Tab Index</title>
+    <meta charset="UTF-8"/>
+</head>
+<body>
+    <!-- Tab Index 0 - 32767
+    Todos los controles de los formularios pueden tener la propiedad tabindex
+    Orden de activación o foco de control -->
+
+    <form action="registrarDatos.php" method="post">
+        <input type="text" name="text1" size="5" tabindex="1"/>
+        <input type="text" name="text2" size="5" tabindex="4"/>
+        <input type="text" name="text3" size="5" tabindex="7"/><br/>
+        <input type="text" name="text4" size="5" tabindex="2"/>
+        <input type="text" name="text5" size="5" tabindex="5"/>
+        <input type="text" name="text6" size="5" tabindex="8"/><br/>
+        <input type="text" name="text7" size="5" tabindex="3"/>
+        <input type="text" name="text8" size="5" tabindex="6"/>
+        <input type="text" name="text9" size="5" tabindex="9"/><br/><br/>
+
+        <input type="submit" value="Enviar" tabindex="10"/>
+    </form>
+</body>
+</html>
