@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Formulario Problema</title>
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <form action="registrarDatos.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Daniel"/><br/><br/>
+        
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono" value="+52"/><br/><br/>
+
+        <label for="mayorEdad">Es mayor de edad?:</label>
+        <select id="mayorEdad" name="mayorEdad">
+            <option value="si" selected>Si</option>
+            <option value="no">No</option>
+        </select><br/><br/>
+
+        <label for="comentarios">Mensaje:</label><br/>
+        <textarea name="comentarios" id="comentarios" cols="30" rows="10">Qué tal, quiero dejar mi comentario.</textarea><br><br>
+        
+        <input type="submit" value="Enviar"/>
+    </form>
+</body>
+</html>
