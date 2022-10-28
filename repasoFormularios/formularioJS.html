@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario con JavaScript</title>
+</head>
+<body>
+    <h3>Formulario utilizando JavaScript</h3>
+
+    <form>
+        <label for="nombre">Ingrese su nombre:</label>
+        <input type="text" id="nombre"/><br/><br/>
+
+        <label for="edad">Ingrese su edad:</label>
+        <input type="text" id="edad"/><br/><br/>
+
+        <label for="clave">Ingrese una clave:</label>
+        <input type="password" id="clave"/><br/><br/>
+
+        <label for="colores">Selecciona un color:</label>
+        <select id="colores" onChange="cambiarColor()">
+            <option value="FF0000">Rojo</option>
+            <option value="00FF00">Verde</option>
+            <option value="0000FF">Azúl</option>
+        </select><br/><br/>
+        
+        <label for="indice">Índice del objeto SELECT:</label>
+        <input type="text" id="indice"/><br/><br/>
+
+        <label for="texto">Texto seleccionado:</label>
+        <input type="text" id="texto"/><br/><br/>
+
+        <label for="valor">Valor asociado:</label>
+        <input type="text" id="valor"/><br/><br/>
+
+        <input type="button" value="Confirmar" onClick="mostrar()"/>
+        <input type="reset" value="Limpiar"/>
+    </form>
+
+    <script>
+        function mostrar() {
+            let nom = document.getElementById('nombre').value;
+            let ed = document.getElementById('edad').value;
+            let clave = document.getElementById('clave').value;
+
+            // console.log('Nombre: ' + nom);
+
+            if (clave.length < 5) {
+                alert('La clave es muy corta, 5 caracteres minimo!');
+            } else {
+                alert('Tamaño correcto de clave');
+            }
+
+            console.log('Clave: ' + clave.length);
+        }
+
+        function cambiarColor() {
+            let colorSeleccionado = document.getElementById('colores');
+
+            document.getElementById('indice').value = colorSeleccionado.selectedIndex;
+            document.getElementById('texto').value = colorSeleccionado.options[colorSeleccionado.selectedIndex].text;
+            document.getElementById('valor').value = colorSeleccionado.options[colorSeleccionado.selectedIndex].value;
+        }
+    </script>
+</body>
+</html>
