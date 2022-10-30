@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo Formulario</title>
+</head>
+<body>
+    <form action="registrarDatos.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Emiliano"/><br><br>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono" value="+52"/><br><br>
+
+        <label for="mayorEdad">Es mayor de edad?:</label>
+        <select name="mayorEdad" id="mayorEdad">
+            <option value="si" selected>Si</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="comentarios">Mensaje:</label><br><br>
+        <textarea name="comentarios" id="comentarios" cols="30" rows="10">Que tal, quiero dejar mi comentario.</textarea><br><br>
+
+        <input type="submit" value="Enviar!"/>
+        <input type="reset" value="Limpiar"/>
+    </form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Botones - Etiquetas HTML</title>
+</head>
+<body>
+    <form action="registrarDatos.php" method="post">
+        <label for="nombre">Ingrese su nombre:</label>
+        <input type="text" name="nombre" id="nombre"/>
+
+        <!-- submit, reset, button -->
+        <input type="submit" value="Enviar!"/>
+        <input type="reset" value="Vaciar"/>
+        <input type="button" value="Programable"/><br/><br/>
+
+        <button type="submit">Enviar
+            <img src="../media/png/controlar.png" alt="Icono enviar" width="10"/>
+        </button>
+
+        <button type="reset">Borrar
+            <img src="../media/png/cruz.png" alt="Icono borrar" width="10"/>
+        </button>
+
+        <button type="button">Función
+            <img src="../media/png/cruz.png" alt="Icono botón" width="10">
+        </button>
+    </form>
+</body>
+</html>

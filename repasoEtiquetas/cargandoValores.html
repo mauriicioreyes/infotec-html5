@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Valores por defecto - HTML</title>
+</head>
+<body>
+    <form action="registrarDatos.php" method="post">
+        
+        <!-- Text -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Carlos"/><br/><br/>
+
+        <!-- Textarea -->
+        <label for="mensaje">Mensaje:</label><br/>
+        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingresa tu mensaje">Buen día, quiero contactar a soporte.</textarea><br><br>
+
+        <!-- Radio -->
+        <fieldset>
+            <legend>Selecciona tu área:</legend>
+            <input type="radio" name="area" id="admin" value="administracion"/>
+            <label for="admin">Administración</label><br/>
+
+            <input type="radio" name="area" id="compras" value="compras"/>
+            <label for="compras">Compras</label><br/>
+
+            <input type="radio" name="area" id="ventas" value="ventas"/>
+            <label for="admin">Ventas</label><br/>
+
+            <input type="radio" name="area" id="cliente" value="cliente" checked/>
+            <label for="cliente">Cliente</label><br/>
+
+            <input type="radio" name="area" id="proveedor" value="proveedor"/>
+            <label for="proveedor">Proveedor</label><br/>
+        </fieldset><br>
+
+
+        <!-- Checkbox -->
+        <input type="checkbox" id="contactar" value="contactar" checked/>
+        <label for="contactar">Deseo recibir seguimiento.</label><br><br>
+
+        <!-- Select -->
+        <label for="prioridad">Prioridad:</label>
+        <select name="nivelPrioridad" id="prioridad">
+            <optgroup label="Nivel" value="prioridad">
+                <option value="alta">Alta</option>
+                <option value="media">Media</option>
+                <option value="baja">Baja</option>
+                <option value="noaplica" selected>No Aplica</option>
+            </optgroup>
+        </select><br><br>
+
+        <!-- Select múltiple -->
+        <label for="diasContacto">¿Qué día(s) podemos contactarlo?</label><br>
+
+        <select name="diasContacto" id="diasContacto" multiple>
+            <optgroup label="Elige uno o más">
+                <option value="lunes" selected>Lunes</option>
+                <option value="martes">Martes</option>
+                <option value="miercoles" selected>Miércoles</option>
+                <option value="jueves">Jueves</option>
+                <option value="viernes" selected>Viernes</option>
+                <option value="sabado">Sábado</option>
+                <option value="domingo">Domingo</option>
+            </optgroup>
+        </select><br><br>
+
+        <input type="submit" value="Enviar!">
+        <input type="reset" value="Limpiar">
+    </form>
+</body>
+</html>
